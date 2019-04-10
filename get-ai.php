@@ -49,7 +49,7 @@ function mbStrSplit ($string, $len=1) {
 $infocount=mb_strlen($_POST['info'], 'UTF-8');
 
 
-if($_POST and $infocount<2000){
+if($_POST and $infocount<10000){
 $r = mbStrSplit($_POST['info'], 1000);
 $arr=count($r);
  for($i=0;$i<$arr;$i++){
